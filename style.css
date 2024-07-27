@@ -1,0 +1,18 @@
+body{
+    margin: auto;
+    background-color: rgba(25, 23, 23, 0.975);
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blanchedalmond;
+    font-size: 50px;
+    text-align: center;
+}
+
+#squares-container{
+    border: 1px solid blanchedalmond;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
