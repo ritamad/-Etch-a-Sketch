@@ -17,9 +17,34 @@ h1 {
     margin: auto;
 }
 
-.square{
+#buttons-container{
+    text-align: center;
+    height: 60px;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    
+    
+}
+
+button {
+    height: 45px;
+    width: 298px;
+    padding: 10px;
+    border: 2px solid blanchedalmond;
+    background-color: rgba(25, 23, 23, 0.975);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blanchedalmond;
+    font-size: 20px;
+    border-radius: 3%;
+    
+
+}
+/* RIPRENDERE DA DECORAZIONE BUTTONS*/
+
+/* .square{
     background-color: aquamarine;
     height: 50px;
     width: 50px;
     border: 1px solid red;
-}
+} */
