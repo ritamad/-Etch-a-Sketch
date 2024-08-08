@@ -1,12 +1,7 @@
-// const sqCont = document.querySelector('#grid-container');
-// const squareDiv = document.createElement('div');
-// squareDiv.classList.add('square');
-
-// sqCont.appendChild(squareDiv);
 
 //FUNCTION TO ASK THE GRID SIZE
 function askSize() {
-    const size = prompt('choose the grid rows and columns number (max 100)');
+    const size = prompt('choose the grid rows and columns number (100 max)');
     return size;
 };
 
@@ -22,5 +17,22 @@ sizeBtn.addEventListener('click', () => {
 
 //FUNCTION TO CREAT THE GRID
 function createGrid(size) {
+    const gridSize = parseInt(size, 10); //base dieci
+    if(isNaN(gridSize) || gridSize < 2 || gridSize > 100) {
+        alert('Please enter a valid number between 2 and 100');
+        return;
+    }
 
-}
+    const container = document.querySelector('#grid-container');
+    container.textContent = '';
+
+    const cellSize = 600 / gridSize;
+    for (let i = 0; i < gridSize * gridSize; i ++) {
+        const cell = document.createElement('div');
+        cell.className = 'grid-cell';
+        cell.style.width = `${cellSize}px`;
+        cell.style.height = `${cellSize}px`;
+        container.appendChild(cell);
+    }
+};
+

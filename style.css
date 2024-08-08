@@ -10,11 +10,18 @@ h1 {
     text-align: center;
 }
 
-#squares-container{
-    border: 1px solid blanchedalmond;
+#grid-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     width: 600px;
     height: 600px;
-    margin: auto;
+    border: 1px solid blanchedalmond;
+}
+
+.grid-cell{
+    box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 #buttons-container{
@@ -22,9 +29,7 @@ h1 {
     height: 60px;
     width: 600px;
     margin: auto;
-    padding: 10px;
-    
-    
+    padding: 10px; 
 }
 
 button {
@@ -40,11 +45,5 @@ button {
     
 
 }
-/* RIPRENDERE DA DECORAZIONE BUTTONS*/
 
-/* .square{
-    background-color: aquamarine;
-    height: 50px;
-    width: 50px;
-    border: 1px solid red;
-} */
+
