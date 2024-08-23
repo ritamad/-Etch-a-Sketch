@@ -15,6 +15,7 @@ sizeBtn.addEventListener('click', () => {
     }
 });
 
+
 //FUNCTION TO CREAT THE GRID
 function createGrid(size) {
     const gridSize = parseInt(size, 10); //base dieci
@@ -35,4 +36,12 @@ function createGrid(size) {
         container.appendChild(cell);
     }
 };
+
+// RESET BUTTON
+const resetBtn = document.querySelector('#reset');
+const gridContainer = document.querySelector('#grid-container');
+resetBtn.addEventListener('click', () => {
+    gridContainer.textContent = '';
+    
+});
 
