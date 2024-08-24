@@ -15,7 +15,7 @@ sizeBtn.addEventListener('click', () => {
     }
 });
 
-
+let cell = null;
 //FUNCTION TO CREAT THE GRID
 function createGrid(size) {
     const gridSize = parseInt(size, 10); //base dieci
@@ -29,7 +29,7 @@ function createGrid(size) {
 
     const cellSize = 600 / gridSize;
     for (let i = 0; i < gridSize * gridSize; i ++) {
-        const cell = document.createElement('div');
+        cell = document.createElement('div');
         cell.className = 'grid-cell';
         cell.style.width = `${cellSize}px`;
         cell.style.height = `${cellSize}px`;
@@ -44,4 +44,13 @@ resetBtn.addEventListener('click', () => {
     gridContainer.textContent = '';
     
 });
+
+//MOUSEOVER EVENT ON EVERY CELL
+gridContainer.addEventListener('mouseover', (event) => {
+    if (event.target.classList.contains('grid-cell')) {
+        event.target.style.backgroundColor = 'white';
+    }
+});
+
+// add the random color option
 
