@@ -48,9 +48,12 @@ resetBtn.addEventListener('click', () => {
 //MOUSEOVER EVENT ON EVERY CELL
 gridContainer.addEventListener('mouseover', (event) => {
     if (event.target.classList.contains('grid-cell')) {
-        event.target.style.backgroundColor = 'white';
+        let random1 = Math.random() * 100;
+        let random2 = Math.random() * 100;
+        let random3 = Math.random() * 100;
+        event.target.style.backgroundColor = `rgb(${random1}%, ${random2}%, ${random3}%)`;
     }
 });
 
-// add the random color option
+// add the random color option 
 
