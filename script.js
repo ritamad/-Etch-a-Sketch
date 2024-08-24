@@ -55,5 +55,5 @@ gridContainer.addEventListener('mouseover', (event) => {
     }
 });
 
-// add the random color option 
+
 
